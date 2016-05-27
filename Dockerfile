@@ -5,5 +5,3 @@ RUN curl https://repo.varnish-cache.org/GPG-key.txt | apt-key add - \
 	&& apt-get update \
 	&& apt-get install -y varnish \
 	&& rm -rf /var/lib/apt/lists/*
-
-ENTRYPOINT ["service","varnish","start"]
